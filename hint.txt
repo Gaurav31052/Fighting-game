@@ -1,0 +1,2 @@
+To position the player and enemy, you need to edit the gravity function in the classes.js file.For positioning the player and enemy edit the gravity function in the classes.js file.
+To fix the jump action, modify 'const gravity' and add event listeners for 'w' and 'ArrowUp' keys. 'w' and 'Arrowup key'.
