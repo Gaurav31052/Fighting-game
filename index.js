@@ -51,16 +51,18 @@ const player = new Fighter({
         y: 0
     },
     imageSrc: './img/samuraiMack/Idle.png',
-    frameMax: 8,
-    scale:2.5,
+    
+    frameMax: 10,
+    scale:3,
     offset: {
         x:215,
         y:157
     },
+    
     sprites:{
         idle: {
             imageSrc: './img/samuraiMack/Idle.png',
-            frameMax: 8
+            frameMax: 10
         },
         run:{
             imageSrc: './img/samuraiMack/Run.png',
@@ -69,24 +71,24 @@ const player = new Fighter({
         },
         jump:{
             imageSrc: './img/samuraiMack/Jump.png',
-            frameMax: 2
+            frameMax: 3
         
         },
         fall:{
             imageSrc: './img/samuraiMack/Fall.png',
-            frameMax: 2
+            frameMax: 3
         },
         attack1:{
             imageSrc: './img/samuraiMack/Attack1.png',
-            frameMax: 6
+            frameMax: 7
         },
         takeHit:{
-            imageSrc: './img/samuraiMack/Take Hit - white silhouette.png',
-            frameMax: 4
+            imageSrc: './img/samuraiMack/Take hit.png',
+            frameMax: 3
         },
         death:{
             imageSrc: './img/samuraiMack/Death.png',
-            frameMax: 6
+            frameMax: 7
         }
 
     },
@@ -118,16 +120,18 @@ const enemy = new Fighter({
         y: 0
     },
     imageSrc: './img/kenji/Idle.png',
-    frameMax: 4,
-    scale:2.5,
+    frameMax: 8,
+    scale:2.3,
     offset: {
         x:215,
-        y:167
+        y:238
     },
+   
     sprites:{
         idle: {
             imageSrc: './img/kenji/Idle.png',
-            frameMax: 4
+
+            frameMax: 8
         },
         run:{
             imageSrc: './img/kenji/Run.png',
@@ -145,7 +149,7 @@ const enemy = new Fighter({
         },
         attack1:{
             imageSrc: './img/kenji/Attack1.png',
-            frameMax: 4
+            frameMax: 8
         },
         takeHit:{
             imageSrc:'./img/kenji/Take hit.png',
