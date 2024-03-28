@@ -13,6 +13,7 @@ class Sprite {
         this.offset = offset
     }
     draw() {
+       
         c.drawImage(this.image, this.frameCurrent * (this.image.width / this.frameMax), 0, this.image.width / this.frameMax, this.image.height,
 
             this.position.x - this.offset.x, this.position.y - this.offset.y, (this.image.width / this.frameMax) * this.scale, this.image.height * this.scale)
