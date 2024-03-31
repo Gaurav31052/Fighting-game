@@ -17,7 +17,8 @@ const background = new Sprite({
         y: 0,
         
     },
-    imageSrc: './img/background5.jpg'
+    // imageSrc: './img/background5.jpg'
+    imageSrc: localStorage.getItem(1)
    
     
 })
