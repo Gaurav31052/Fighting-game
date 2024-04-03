@@ -52,7 +52,22 @@ a{
     border: none;
 }
 
+.Hero-Cont{
+    position: absolute;
+    height: 430px;
+    width: 830px;
+    top: 125px;
+    left: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.Hero-Cont .hero{
+    width: 200px;
+    height: 100%;
+    background-color: #fff;
+}
 
 /* thumbail */
 .thumbnail{
