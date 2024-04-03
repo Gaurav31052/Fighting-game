@@ -117,5 +117,5 @@ a{
 .myimg:hover{
     filter: none;
     scale: 1.1;
-    transition: 0.3s ease-in;
+    transition: 0.5s ease-in;
 }
