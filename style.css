@@ -49,16 +49,17 @@ a {
     border: none;
 }
 
-/* .Hero-Cont {
+.MapName {
+    background: red;
     position: absolute;
-    height: 430px;
+    height: 130px;
     width: 830px;
-    top: 195px;
+    top: 200px;
     left: 90px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-} */
+}
 
 
 
