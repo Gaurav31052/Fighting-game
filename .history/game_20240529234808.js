@@ -254,8 +254,6 @@ function animate() {
     // detect for collision & enemy get hit
     if (rectangularCollision({ rectangle1: player, rectangle2: enemy }) && player.isAttacking && player.frameCurrent===4) {
         enemy.takeHit()
-        enemy_take_hit.volume=0.2
-        enemy_take_hit.play()
         player.isAttacking = false
         
         // document.querySelector('#enemyHealth').style.width = enemy.health + '%'
@@ -272,8 +270,6 @@ function animate() {
     // this is where our player hit
     if (rectangularCollision({ rectangle1: enemy, rectangle2: player }) && enemy.isAttacking && enemy.frameCurrent === 2) {
         player.takeHit()
-        player_take_hit.volume=0.2
-        player_take_hit.play();
         enemy.isAttacking = false
         // console.log('enemy is Attacking')
         // document.querySelector('#playerHealth').style.width = player.health + '%'
@@ -402,7 +398,7 @@ window.addEventListener('keyup', (event) => {
 //Sound Effect
 var sword =new Audio("./audio/sword sound.mp4");
 var player_take_hit =new Audio("./audio/grunt_1.mp3");
-var enemy_take_hit =new Audio("./audio/grunt_2.mp3");
+var enemy_take_hit =new Audio("./audio/grunt_1.mp3");
 var woo1 =new Audio("./audio/woo1.mp3");
 var fight = new Audio("./audio/fight-deep-voice.mp3");
 fight.play();

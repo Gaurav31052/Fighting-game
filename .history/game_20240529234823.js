@@ -254,8 +254,7 @@ function animate() {
     // detect for collision & enemy get hit
     if (rectangularCollision({ rectangle1: player, rectangle2: enemy }) && player.isAttacking && player.frameCurrent===4) {
         enemy.takeHit()
-        enemy_take_hit.volume=0.2
-        enemy_take_hit.play()
+        enemy_take_hit
         player.isAttacking = false
         
         // document.querySelector('#enemyHealth').style.width = enemy.health + '%'
@@ -272,8 +271,6 @@ function animate() {
     // this is where our player hit
     if (rectangularCollision({ rectangle1: enemy, rectangle2: player }) && enemy.isAttacking && enemy.frameCurrent === 2) {
         player.takeHit()
-        player_take_hit.volume=0.2
-        player_take_hit.play();
         enemy.isAttacking = false
         // console.log('enemy is Attacking')
         // document.querySelector('#playerHealth').style.width = player.health + '%'
