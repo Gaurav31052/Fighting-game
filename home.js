@@ -29,6 +29,10 @@ choices.forEach((e) => {
     })
 });
 
+var home_music =new Audio("./audio/background sound.mp3");
+home_music.play();
+home_music.loop=true;
+home_music.volume=0.1;
 
 
 

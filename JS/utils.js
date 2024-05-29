@@ -5,14 +5,25 @@ function rectangularCollision({ rectangle1, rectangle2 }) {
 function determineWinner({ player, enemy, timerId }) {
     clearTimeout(timerId)
     document.querySelector('#displayText').style.display = 'flex'
+    document.querySelector('#displayText2').style.display = 'flex'
     if (player.health === enemy.health) {
+        game_sound.pause();
+        draw.loop=true;
+        draw.play();
         document.querySelector('#displayText').innerHTML = 'Tie'
+        document.querySelector('#displayText2').innerHTML = 'Last Fight'
     }
     else if (player.health > enemy.health) {
-        document.querySelector('#displayText').innerHTML = 'Player 1 Wins'
+        game_sound.pause();
+        winning.play()
+        document.querySelector('#displayText').innerHTML = 'Player-1 Wins!'
+        document.querySelector('#displayText2').innerHTML = 'Last Fight'
     }
     else if (player.health < enemy.health) {
-        document.querySelector('#displayText').innerHTML = 'Player 2 Wins'
+        game_sound.pause();
+        winning.play()
+        document.querySelector('#displayText').innerHTML = 'Player-2 Wins!'
+        document.querySelector('#displayText2').innerHTML = 'Last Fight'
     }
 }
 
@@ -30,3 +41,5 @@ function decreaseTimer() {
 }
 
 
+var draw =new Audio("./audio/tie_bgm.mp3");
+var winning =new Audio("./audio/winning audio.mp3");

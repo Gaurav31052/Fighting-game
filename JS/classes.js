@@ -191,8 +191,10 @@ class Fighter extends Sprite {
                 this.frameMax = this.sprites.death.frameMax
                 this.frameCurrent = 0
                 }
+                
                 break;
     
         }
     }
 }
+

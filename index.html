@@ -7,6 +7,12 @@
             box-sizing: border-box;
             font-family: "Press Start 2P", system-ui;
         }
+        
+            @keyframes fadeIn {
+                from { opacity: 0; }
+                to { opacity: 1; }
+            }
+        
     </style>
 </head>
 
@@ -41,7 +47,12 @@
             </div>
         </div>
         <div id="displayText" style="position: absolute; color: white; display: flex; align-items: center; justify-content: center; top: 0;
-        right: 0; left: 0; bottom: 0; display: none;">tie</div>
+        right: 0; left: 0; bottom: 260; font-size: 33px; display: none;">tie</div>
+        <div id="displayText2" style="position: absolute; color: white; display: flex; align-items: center; justify-content: center; top: 0;
+        right: 0; left: 0; bottom: 160; font-size: 30px; display: none; opacity: 0; animation: fadeIn 5s forwards; "></div>
+        <div id="displayText3" style="position: absolute; color: white; display: flex; align-items: center; justify-content: center; top: 0;
+        right: 0; left: 0; bottom: 160; font-size: 30px; display: none; opacity: 0;  "><button></button></div>
+
         <canvas id="canvas"></canvas>
 
     </div>

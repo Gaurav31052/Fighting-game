@@ -309,6 +309,7 @@ window.addEventListener('keydown', (event) => {
             break
         case ' ':
             player.attack()
+            sword.play();
             break
 
         }
@@ -360,6 +361,9 @@ window.addEventListener('keyup', (event) => {
 })
 
 
+
+
+
 // voice command
 
 // if(annyang){
@@ -388,3 +392,14 @@ window.addEventListener('keyup', (event) => {
 //     annyang.addCommands(commands);
 //     annyang.start();
 // }
+
+
+//Sound Effect
+var sword =new Audio("./audio/sword sound.mp4");
+var fight = new Audio("./audio/fight-deep-voice.mp3");
+fight.play();
+// draw_music.play();
+var game_sound =new Audio("./audio/game_bgm.mp3");
+game_sound.loop=true;
+game_sound.volume=0.3;
+game_sound.play();
