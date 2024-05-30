@@ -6,7 +6,7 @@ function determineWinner({ player, enemy, timerId }) {
     clearTimeout(timerId)
     document.querySelector('#displayText').style.display = 'flex'
     document.querySelector('#displayText2').style.display = 'flex'
-    document.querySelector('#displayText4').style.display = 'flex'
+ 
     document.querySelector('#displayText5').style.display = 'flex'
     if (player.health === enemy.health) {
         game_sound.pause();
@@ -14,6 +14,8 @@ function determineWinner({ player, enemy, timerId }) {
         draw.play();
         document.querySelector('#displayText').innerHTML = 'Tie'
         document.querySelector('#displayText2').innerHTML = 'Last Fight'
+        // document.querySelector('#displayText4').innerHTML = 'Reply'
+        // document.querySelector('#displayText5').innerHTML = 'home'
     }
     else if (player.health > enemy.health) {
         game_sound.pause();
@@ -29,7 +31,7 @@ function determineWinner({ player, enemy, timerId }) {
     }
 }
 
-let timer = 60;
+let timer = 3;
 let timerId
 function decreaseTimer() {
     if (timer > 0) {

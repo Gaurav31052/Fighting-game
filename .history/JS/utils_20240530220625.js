@@ -6,8 +6,7 @@ function determineWinner({ player, enemy, timerId }) {
     clearTimeout(timerId)
     document.querySelector('#displayText').style.display = 'flex'
     document.querySelector('#displayText2').style.display = 'flex'
-    document.querySelector('#displayText4').style.display = 'flex'
-    document.querySelector('#displayText5').style.display = 'flex'
+    document.querySelector('#displayText3').style.display = 'flex'
     if (player.health === enemy.health) {
         game_sound.pause();
         draw.loop=true;
@@ -29,7 +28,7 @@ function determineWinner({ player, enemy, timerId }) {
     }
 }
 
-let timer = 60;
+let timer = 3;
 let timerId
 function decreaseTimer() {
     if (timer > 0) {
@@ -45,4 +44,3 @@ function decreaseTimer() {
 
 var draw =new Audio("./audio/tie_bgm.mp3");
 var winning =new Audio("./audio/winning audio.mp3");
-
