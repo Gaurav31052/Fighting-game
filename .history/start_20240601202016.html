@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last Fight</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<style>
+ html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+#fullscreenVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+#afterVideoButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    cursor: pointer;
+
+    /* font-size: 100px; */
+    font-family: "Press Start 2P", system-ui;
+    text-align: center;
+    text-shadow: 0 0 10px #fff, 0 0 5px #fff;
+    background: transparent;
+    border: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+   
+</style>
+<body>
+    <video id="fullscreenVideo" autoplay >
+        <source src="./audio/intro-video.mp4" type="video/mp4">
+    </video>
+    <button id="afterVideoButton" style="display: none;"><a href='home.html'>START</a></button>
+    <script>
+        document.getElementById('fullscreenVideo').addEventListener('ended', function() {
+    document.getElementById('afterVideoButton').style.display = 'block';
+});
+
+    </script>
+</body>
+</html>
