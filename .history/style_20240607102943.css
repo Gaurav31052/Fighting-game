@@ -50,6 +50,7 @@ a {
     border: none;
 }
 
+#btn {}
 
 #btn:hover {
     border: 4px solid black;
