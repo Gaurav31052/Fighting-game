@@ -371,32 +371,32 @@ window.addEventListener('keyup', (event) => {
 
 // voice command
 
-if(annyang){
-    var commands={
-        // 'forward': function(){alert('helloooo');}
-        'forward': function(){ key.d.pressed = true
-            player.lastkey = 'd'
-        setTimeout(()=>{
-            key.d.pressed = false
-            annyang.start()
-        },500)
-        },
-        'stop': function(){ key.d.pressed = false
-            player.lastkey = 'd' },
-        'back': function(){key.a.pressed = true
-            player.lastkey = 'a'
-            setTimeout(()=>{
-                key.a.pressed = false
-                annyang.start()
-            },500)},
-        'jump': function(){player.velocity.y = -38 
-            annyang.start()},
-        'attack': function(){ player.attack()
-            annyang.start()}
-    };
-    annyang.addCommands(commands);
-    annyang.start();
-}
+// if(annyang){
+//     var commands={
+//         // 'forward': function(){alert('helloooo');}
+//         'forward': function(){ key.d.pressed = true
+//             player.lastkey = 'd'
+//         setTimeout(()=>{
+//             key.d.pressed = false
+//             annyang.start()
+//         },500)
+//         },
+//         'stop': function(){ key.d.pressed = false
+//             player.lastkey = 'd' },
+//         'back': function(){key.a.pressed = true
+//             player.lastkey = 'a'
+//             setTimeout(()=>{
+//                 key.a.pressed = false
+//                 annyang.start()
+//             },500)},
+//         'jump': function(){player.velocity.y = -38 
+//             annyang.start()},
+//         'attack': function(){ player.attack()
+//             annyang.start()}
+//     };
+//     annyang.addCommands(commands);
+//     annyang.start();
+// }
 
 
 //Sound Effect
